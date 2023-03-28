@@ -9,6 +9,6 @@
     "email": "author@org.org",
     "__author": "{{cookiecutter.full_name}} <{{cookiecutter.email}}>",
     "license": ["MIT", "BSD-3", "GNU GPL v3.0", "Apache Software License 2.0"],
-    "github_token_variable_name_for_doc_deployment": "GH_TOKEN",
-    "github_token_variable_name_for_pypi_deployment": "PYPI_TOKEN"
+    "github_token_for_doc_deployment": "GH_TOKEN",
+    "github_token_for_pypi_deployment": "PYPI_TOKEN"
 }

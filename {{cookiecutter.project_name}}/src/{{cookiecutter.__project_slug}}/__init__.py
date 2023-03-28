@@ -1,6 +1,6 @@
 """{{cookiecutter.project_name}} package."""
 import importlib_metadata
-                
+
 try:
     __version__ = importlib_metadata.version(__name__)
 except importlib_metadata.PackageNotFoundError:

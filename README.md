@@ -1,4 +1,4 @@
-# Monarch-project-template
+# Monarch Project Template
 A [Cookiecutter](https://cookiecutter.readthedocs.io/en/stable/) template for projects using [`Sphinx`](https://www.sphinx-doc.org/en/master/) + [`tox`](https://tox.wiki/en/latest/index.html) + [`poetry`](https://python-poetry.org/docs/). This template was developed thanks to the [tutorials by the cookiecutter project](https://cookiecutter.readthedocs.io/en/stable/tutorials/index.html) along with the instructions provided in [HelloCookieCutter1](https://github.com/BruceEckel/HelloCookieCutter1/blob/master/Readme.rst) by Bruce Eckel. The `tox` configuration is partly accreditted to Charles Tapley Hoyt's [cookiecutter implementation](https://github.com/cthoyt/cookiecutter-snekpack/blob/main/%7B%7Bcookiecutter.package_name%7D%7D/tox.ini).
 
 # Getting started

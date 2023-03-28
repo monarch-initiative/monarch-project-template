@@ -1,0 +1,14 @@
+{
+    "project_name": "Project_X",
+    "__project_slug": "{{ cookiecutter.project_name|lower()|replace(' ', '_')|replace('-', '_') }}",
+    "project_description": "This is the project description.",
+    "min_python_version": "3.9",
+    "file_name": "main",
+    "greeting_recipient": "World",
+    "full_name": "Author 1",
+    "email": "author@org.org",
+    "__author": "{{cookiecutter.full_name}} <{{cookiecutter.email}}>",
+    "license": ["MIT", "BSD-3", "GNU GPL v3.0", "Apache Software License 2.0"],
+    "github_token_variable_name_for_doc_deployment": "GH_TOKEN",
+    "github_token_variable_name_for_pypi_deployment": "PYPI_TOKEN"
+}

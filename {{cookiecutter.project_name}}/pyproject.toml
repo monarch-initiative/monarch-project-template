@@ -23,7 +23,7 @@ sphinx-click = {version = "^4.3.0", extras = ["docs"]}
 myst-parser = {version = "^0.18.1", extras = ["docs"]}
 
 [tool.poetry.scripts]
-{{cookiecutter.project_name}} = "{{cookiecutter.project_name}}.cli:main"
+{{cookiecutter.project_name}} = "{{cookiecutter.__project_slug}}.cli:main"
 
 [tool.poetry.extras]
 docs = [

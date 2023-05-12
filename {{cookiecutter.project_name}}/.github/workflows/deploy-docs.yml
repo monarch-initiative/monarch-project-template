@@ -31,7 +31,7 @@ jobs:
         cd docs/
         poetry run sphinx-apidoc -o . ../src/{{ cookiecutter.__project_slug}}/ --ext-autodoc -f
         poetry run sphinx-build -b html . _build
-        cp -r _build/* ../gh-pages/
+        cp -r _build/html/* ../gh-pages/
     
     - name: Deploy documentation.
       if: ${{ "{{" }} github.event_name == 'push' {{ "}}" }}
@@ -40,3 +40,4 @@ jobs:
         branch: gh-pages
         force: true
         folder: gh-pages
+        token: ${{ "{{" }} secrets.{{cookiecutter.github_token_for_doc_deployment}} {{ "}}" }}

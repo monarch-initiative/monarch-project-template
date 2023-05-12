@@ -16,7 +16,7 @@ Please supply enough details to the developers to enable them to verify and trou
 * Describe the behavior you observed after following the steps and point out what exactly is the problem with that behavior.
 * Explain which behavior you expected to see instead and why.
 * Provide screenshots of the expected or actual behaviour where applicable.
-* Tag the issue with appropriate label names. For example, if your issue is about a bug that needs to be fixed in the repo, tag the issue with the `bug` label from the list of [labels](https://github.com/linkml/linkml-runtime/labels). If an appropriate label doesn't exist, create one, with a name that clearly encapsulates the topic of the issue.
+
 
 ### The development lifecycle
 

@@ -12,6 +12,7 @@ __all__ = [
 
 logger = logging.getLogger(__name__)
 
+
 @click.group()
 @click.option("-v", "--verbose", count=True)
 @click.option("-q", "--quiet")
@@ -30,6 +31,7 @@ def main(verbose: int, quiet: bool):
         logger.setLevel(level=logging.WARNING)
     if quiet:
         logger.setLevel(level=logging.ERROR)
+
 
 @main.command()
 def run():

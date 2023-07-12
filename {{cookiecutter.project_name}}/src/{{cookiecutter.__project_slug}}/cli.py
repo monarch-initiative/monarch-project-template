@@ -35,8 +35,6 @@ def main(verbose: int, quiet: bool):
 def run():
     """Run the {{cookiecutter.project_name}}'s demo command."""
     demo()
-     
-
 
 if __name__ == "__main__":
     main()

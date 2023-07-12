@@ -5,5 +5,5 @@ def demo():
     print("Hello, {{cookiecutter.greeting_recipient}}!")
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     demo()

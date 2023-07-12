@@ -38,16 +38,16 @@ line-length = 100
 target-version = ["py38", "py39", "py310"]
 
 [tool.ruff]
- extend-exclude = [
-     "tests/output",
-     "tests/**/output"
- ]
+extend-ignore = [
+    "D211",  # `no-blank-line-before-class`
+    "D213",  # `multi-line-summary-second-line`
+    ]
 
 # Allow autofix for all enabled rules (when `--fix`) is provided.
 fixable = ["ALL"]
 
 # Select or ignore from https://beta.ruff.rs/docs/rules/
- select = [
+select = [
     "B",  # bugbear
     "D",  # pydocstyle
     "E",  # pycodestyle errors
@@ -55,7 +55,7 @@ fixable = ["ALL"]
     "I",  # isort 
     "S",  # flake8-bandit
     "W",  # Warning
- ]
+]
 
 unfixable = []
 target-version = "py310"

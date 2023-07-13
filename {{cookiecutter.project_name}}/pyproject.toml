@@ -37,12 +37,38 @@ style = "pep440"
 line-length = 100
 target-version = ["py38", "py39", "py310"]
 
-[tool.isort]
-profile = "black"
-multi_line_output = 3
-line_length = 100
-include_trailing_comma = true
-reverse_relative = true
+[tool.ruff]
+extend-ignore = [
+    "D211",  # `no-blank-line-before-class`
+    "D213",  # `multi-line-summary-second-line`
+    ]
+
+# Allow autofix for all enabled rules (when `--fix`) is provided.
+fixable = ["ALL"]
+
+# Select or ignore from https://beta.ruff.rs/docs/rules/
+select = [
+    "B",  # bugbear
+    "D",  # pydocstyle
+    "E",  # pycodestyle errors
+    "F",  # Pyflakes
+    "I",  # isort 
+    "S",  # flake8-bandit
+    "W",  # Warning
+]
+
+unfixable = []
+target-version = "py310"
+
+[tool.ruff.mccabe]
+# Unlike Flake8, default to a complexity level of 10.
+max-complexity = 10
+
+[tool.codespell]
+skip = "*.po,*.ts,.git,pyproject.toml"
+count = ""
+quiet-level = 3
+# ignore-words-list = ""
 
 [build-system]
 requires = ["poetry-core>=1.0.0", "poetry-dynamic-versioning"]

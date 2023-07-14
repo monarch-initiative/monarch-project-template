@@ -40,7 +40,7 @@ target-version = ["py38", "py39", "py310"]
 [tool.ruff]
 extend-ignore = [
     "D211",  # `no-blank-line-before-class`
-    "D213",  # `multi-line-summary-second-line`
+    "D212",  # `multi-line-summary-first-line`
     ]
 
 # Allow autofix for all enabled rules (when `--fix`) is provided.

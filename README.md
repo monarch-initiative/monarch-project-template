@@ -80,6 +80,15 @@ poetry self add "poetry-dynamic-versioning[plugin]"
 poetry add poetry-dynamic-versioning
 ```
 
+## Set-up `pre-commit`
+In order for `pre-commit` to work you have to ensure that the project has a `.git` directory. If you do not have it in your project directory, run `git init`. This should create the `.git` directory within the project. After this step run:
+```
+poetry run pre-commit install
+```
+which will result in the message `pre-commit installed at .git/hooks/pre-commit`.
+
+This indicates that you have a successful `pre-commit` setup.
+
 ## Run `tox` to see if the setup works
 ```
 poetry run tox

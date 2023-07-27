@@ -80,6 +80,18 @@ poetry self add "poetry-dynamic-versioning[plugin]"
 poetry add poetry-dynamic-versioning
 ```
 
+## Set-up `pre-commit`
+`pre-commit` runs hooks on every commit to automatically point out issues in code such as missing semicolons, trailing whitespace, and debug statements. For more information click [here](https://pre-commit.com).
+
+```
+poetry run pre-commit install
+```
+which will result in the message: 
+```
+pre-commit installed at .git/hooks/pre-commit
+``` 
+This indicates that you have a successful `pre-commit` setup.
+
 ## Run `tox` to see if the setup works
 ```
 poetry run tox

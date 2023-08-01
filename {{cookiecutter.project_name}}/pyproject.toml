@@ -35,7 +35,7 @@ vcs = "git"
 style = "pep440"
 
 [tool.black]
-line-length = 100
+line-length = 120
 target-version = ["py38", "py39", "py310"]
 
 [tool.ruff]
@@ -43,6 +43,7 @@ extend-ignore = [
     "D211",  # `no-blank-line-before-class`
     "D212",  # `multi-line-summary-first-line`
     ]
+line-length = 120
 
 # Allow autofix for all enabled rules (when `--fix`) is provided.
 fixable = ["ALL"]

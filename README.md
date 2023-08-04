@@ -113,9 +113,11 @@ And as the last line says: `congratulations :)`!! Your project is ready to evolv
 
 On the command line, type the `project_name`. In this example, `ABCD`:
 ```
-ABCD run
+poetry run ABCD run
 ```
 Should return `Hello, **greeting_recipient value chosen during setup**`
+
+To run commands within the poetry environment either preface the command with `poetry run`, i.e. `poetry run /path-to/my-command --options` or open the poetry shell with `poetry shell`.
 
 # Future updates to the project's boilerplate code
 

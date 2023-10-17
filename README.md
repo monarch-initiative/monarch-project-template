@@ -152,8 +152,8 @@ This will release a 0.0.0 version of your project on PyPI.
 # Push to GitHub
 
 1. Go to [https://github.com/new] and follow the instructions, being sure to
-   NOT add a .gitignore file (this cookiecutter template will take
-   care of this for you)
+   NOT add the README.md and .gitignore files (the cookiecutter template will take
+   care of these for you)
 
 2. Add the remote to your local git repository
 

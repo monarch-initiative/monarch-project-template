@@ -149,6 +149,20 @@ poetry publish -u YOUR_PYPI_USERNAME -p YOUR_PYPI_PASSWORD
 ```
 This will release a 0.0.0 version of your project on PyPI.
 
+# Push to GitHub
+
+1. Go to [https://github.com/new] and follow the instructions, being sure to
+   NOT add a README or .gitignore file (this cookiecutter template will take
+   care of this for you)
+
+2. Add the remote to your local git repository
+
+   ```bash
+   git remote add origin https://github.com/my-user-or-organization/Project-X.git
+   git branch -M main
+   git push -u origin main
+   ```
+
 ## Automating this via Github Release
 Go to the [PyPI account settings](https://pypi.org/manage/account/#two-factor) and select "Add API token". Create an API token and choose its scope: this token could either upload all the projects maintained or owned, its scope can be limited to just one project (preferred).
 

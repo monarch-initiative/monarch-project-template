@@ -160,6 +160,8 @@ This will release a 0.0.0 version of your project on PyPI.
    ```bash
    git remote add origin https://github.com/my-user-or-organization/ABCD.git
    git branch -M main
+   git add .
+   git commit -m "first commit"
    git push -u origin main
    ```
 

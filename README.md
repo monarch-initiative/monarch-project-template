@@ -158,7 +158,7 @@ This will release a 0.0.0 version of your project on PyPI.
 2. Add the remote to your local git repository
 
    ```bash
-   git remote add origin https://github.com/my-user-or-organization/Project-X.git
+   git remote add origin https://github.com/my-user-or-organization/ABCD.git
    git branch -M main
    git push -u origin main
    ```

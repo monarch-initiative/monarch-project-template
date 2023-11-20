@@ -71,7 +71,7 @@ poetry install
 poetry add --group dev poetry-dynamic-versioning
 ```
 
-## initialize a git repository
+## Initialize a git repository
 ```bash
 git init
 ```

@@ -71,9 +71,13 @@ pip install poetry
 poetry install
 ```
 
-## Add `poetry-dynamic-versioning` as a dev dependency.
+## Add `poetry-dynamic-versioning` as a plugin
 ```
-poetry add --group dev poetry-dynamic-versioning
+poetry self add "poetry-dynamic-versioning[plugin]"
+```
+**Note**: If you are using a Linux system and the above doesn't work giving you the following error `Invalid PEP 440 version: ...`, you could alternatively run:
+```
+poetry add poetry-dynamic-versioning
 ```
 
 ## Set-up `pre-commit`

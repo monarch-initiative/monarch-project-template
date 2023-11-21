@@ -54,7 +54,7 @@ select = [
     "D",  # pydocstyle
     "E",  # pycodestyle errors
     "F",  # Pyflakes
-    "I",  # isort 
+    "I",  # isort
     "S",  # flake8-bandit
     "W",  # Warning
 ]

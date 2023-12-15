@@ -3,10 +3,10 @@
 # https://www.sphinx-doc.org/en/master/usage/configuration.html
 
 import os
-import re
-import sys
 from datetime import date
+
 from {{cookiecutter.__project_slug}} import __version__
+
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 

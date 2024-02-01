@@ -9,7 +9,7 @@ readme = "README.md"
 [tool.poetry.dependencies]
 python = "^{{cookiecutter.min_python_version}}"
 click = "*"
-importlib-metadata = "^4.8.0"
+importlib-metadata = ">=4.8.0"
 
 [tool.poetry.group.dev.dependencies]
 pytest = {version = ">=7.1.2"}

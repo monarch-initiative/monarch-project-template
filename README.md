@@ -167,3 +167,40 @@ This will release a 0.0.0 version of your project on PyPI.
 
 ## Automating this via Github Release
 Use "[Trusted Publishers](https://docs.pypi.org/trusted-publishers/)" by PyPI
+
+## Creating documentation
+The documentation desired should be placed in the `docs` directory (markdown or reStructured format files).
+
+Let's say the user has 2 more .rst files to add:
+ - intro.rst
+ - installation.rst
+
+These two files should be placed in the docs directory and the `index.rst` file should be updated to read the following
+
+```rst
+Welcome to {{project_name}}'s documentation!
+=========================================================
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Contents:
+
+   intro
+   installation
+
+Indices and tables
+==================
+
+* :ref:`genindex`
+* :ref:`modindex`
+* :ref:`search`
+
+```
+This lets sphinx know to look for theses rst files and generate equivalent HTML files.
+
+Documentation is automatically built and deployed via the github workflow `deploy-docs.yml`. 
+When changes are added to the main branch, this workflow is triggered. For this to work, the user needs to 
+set-up the github repository of the project to enable documentation from a specific branch. In the `Settings` tab 
+of the repository, click the `Pages` section in the left bar. For the `Branch`, choose the `gh-pages` branch.
+
+The full GitHub Pages documentation can be found [here](https://docs.github.com/en/pages/quickstart). 

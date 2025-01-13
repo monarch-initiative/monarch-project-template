@@ -69,34 +69,6 @@ curl -LsSf https://astral.sh/uv/install.sh | sh
 ```
 There is also a PyPi package you can install with `pipx` or `pip`. You can also use your system package management or other utilities to install `uv` system-wide. Please see the (UV Getting Started Guide)[https://docs.astral.sh/uv/getting-started/installation/] for these installation options.
 
-I prefer to keep each repos package management within the repo virtual environment. This ensures complete encapsulation and prevents different projects having different versions of the package management tools creating conflict. Most people don't find it necessary to have this level of separation.
-
-If you would like to install `uv` within the repository virtual environment, here is an example of how I do it.
-```
-pyenv local 3.13
-python -m venv .venv
-```
-If you want to make any changes to the virtual environment make those changese then activate the virtual environment. Then we can install `uv` to the local virtual environment within the repository.
-
-```
-activate
-pip install uv
-```
-
-## Install dependencies
-```
-poetry install
-```
-
-## Add `poetry-dynamic-versioning` as a plugin
-```
-poetry self add "poetry-dynamic-versioning[plugin]"
-```
-**Note**: If you are using a Linux system and the above doesn't work giving you the following error `Invalid PEP 440 version: ...`, you could alternatively run:
-```
-poetry add poetry-dynamic-versioning
-```
-
 ## Set-up `pre-commit`
 `pre-commit` runs hooks on every commit to automatically point out issues in code such as missing semicolons, trailing whitespace, and debug statements. For more information click [here](https://pre-commit.com).
 

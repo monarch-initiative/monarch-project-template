@@ -68,11 +68,9 @@ Once you have completed these steps, you can remove the [Setting Up a New Projec
   * [{{cookiecutter.__project_slug}}](src/{{cookiecutter.__project_slug}})
     * [schema](src/{{cookiecutter.__project_slug}}/schema) -- LinkML schema
       (edit this)
-{%- if cookiecutter.create_python_classes == "Yes" %}
     * [datamodel](src/{{cookiecutter.__project_slug}}/datamodel) -- generated
       Python datamodel
 * [tests/](tests/) - Python tests
-{%- endif %}
 
 ## Developer Documentation
 

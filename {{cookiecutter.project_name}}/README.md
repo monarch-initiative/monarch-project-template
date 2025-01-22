@@ -90,6 +90,8 @@ This should run all the bullets mentioned above under the `tox` configuration an
 
 And as the last line says: `congratulations :)`!! Your project is ready to evolve!
 
+> If you have an error running `tox` your python dependencies may be out of sync and you may be able to fix it by running `poetry lock` and then running `tox` again.
+
 # Final test to see everything is wired properly
 
 On the command line, type the `project_name`. In this example, `ABCD`:
